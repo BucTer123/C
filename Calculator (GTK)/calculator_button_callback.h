@@ -1,0 +1,6 @@
+#ifdef CALCULATOR_BUTTON_CALLBACK_H
+#define CALCULATOR_BUTTON_CALLBACK_H
+
+void calculator_button_callbackz();
+
+#endif //CALCULATOR_BUTTON_CALLBACK_H
