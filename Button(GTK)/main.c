@@ -5,7 +5,7 @@ void button_callback() {
 }
 
 int main(int argc, char** argv) {
-    gtk_init(argc, argv);
+    gtk_init(&argc, &argv);
     
     GtkWidget *window, *button;
 
@@ -23,4 +23,9 @@ int main(int argc, char** argv) {
     gtk_container_add(GTK_CONTAINER(window), label2);
 
     g_signal_connect(button, "clicked", button_callback);
+
+    gtk_widget_show_all(window);
+
+    gtk_main();
+    return 0;
 }
