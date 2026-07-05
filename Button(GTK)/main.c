@@ -22,6 +22,11 @@ int main(int argc, char** argv) {
     GtkWidget *label2 = gtk_label_new("Click button");
     gtk_container_add(GTK_CONTAINER(window), label2);
 
+    GtkWidget *fixed = gtk_fixed_new();
+
+    gtk_fixed_put(GTK_FIXED(fixed), label, 400, 10);
+    gtk_fixed_put(GTK_FIXED(fixed), label2, 400, 20);
+    gtk_fixed_put(GTK_FIXED(fixed), button, 400, 30);
     g_signal_connect(button, "clicked", button_callback);
 
     gtk_widget_show_all(window);
