@@ -15,7 +15,7 @@ void BLYAT_CALL() {
 int main(int argc, char* argv[]) {
     gtk_init(&argc, &argv);
 
-    GtkWidget *win, *inp, *btn;
+    GtkWidget *win, *inp, *btn, fixed;
 
     win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title(GTK_WINDOW(win), "WIN");
@@ -24,10 +24,14 @@ int main(int argc, char* argv[]) {
     inp = gtk_entry_new();
     gtk_entry_set_placeholder_text(GTK_ENTRY(entry), ">");
     
-
     btn = gtk_button_new_with_label("GO!");
     g_signal_connect(btn, "clicked", G_CALLBACK(BLYAT_CALL));
 
+    fixed = gtk_fixed_new():
+
+    gtk_fixed_put(GTK_FIXED(fixed), inp, 320, 10);
+    gtk_fixed_put(GTK_FIXED(fixed), btn, 320, 20);
+    
     gtk_widget_show_all(win);
     gtk_main();
 }
