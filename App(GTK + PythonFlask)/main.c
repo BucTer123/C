@@ -9,6 +9,9 @@ void start_webserver_python() {
 }
 
 void btn1_callback() {
+    GtkWidget *fixed = gtk_fixed_new();
+
+    
     GtkWidget *window2 = gtk_new_window();
     gtk_new_window_set_default_size(GTK_WINDOW(window), 800, 600);
     gtk_new_window_set_title(GTK_WINDOW(window), "Second Window!");
@@ -18,6 +21,9 @@ void btn1_callback() {
 
     GtkWidget *btn3 = gtk_new_button_with_label("Start WebServer");
     g_container_add(GTK_CONTAINER(window), btn3);
+
+    gtk_fixed_put(GTK_FIXED(fixed), text3, 400, 10);
+    gtk_fixed_put(GTK_FIXED(fixed), btn3, 400, 20);
 
     g_signal_connect(btn3, "clicked", G_CALLBACK(start_webserver_python))
 
@@ -37,6 +43,8 @@ void btn3_callback() {
 int main(int argc, char** argv) {
     gtk_init(&argc, &argv);
 
+    GtkWidget *fixed = gtk_fixed_new();
+
     GtkWidget *window = gtk_new_window(GTK_TOPLEVEL);
     gtk_new_window_set_default_size(GTK_WINDOW(window), 800, 600);
     gtk_new_window_set_title(GTK_WINDOW(window), "Window");
@@ -55,6 +63,12 @@ int main(int argc, char** argv) {
 
     GtkWidget *btn3 = gtk_new_button_with_label("About");
     g_container_add(GTK_CONTAINER(window), btn3);
+
+    gtk_fixed_put(GTK_FIXED(fixed), text, 400, 10);
+    gtk_fixed_put(GTK_FIXED(fixed), text2, 400, 20);
+    gtk_fixed_put(GTK_FIXED(fixed), btn1, 400, 30);
+    gtk_fixed_put(GTK_FIXED(fixed), btn2, 400, 40);
+    gtk_fixed_put(GTK_FIXED(fixed), btn3, 400, 50);
 
     g_signal_connect(btn1, "clicked", G_CALLBACK(btn1_callback));
     g_signal_connect(btn2, "clicked", G_CALLBACK(btn2_callback));
