@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inlcude <time.h>
+#include <ctime.h>
 #include "file_color_text.h"
 
 #define ANSI_COLOR_RED     "\x1b[31m"
