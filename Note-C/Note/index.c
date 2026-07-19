@@ -12,8 +12,12 @@ int main(int argc, char* argv[]) {
     gtk_window_set_title(GTK_WINDOW(wind), "Welcome_Window!");
     gtk_window_set_default_size(GTK_WINDOW(wind), 800, 600);
 
+    GtkWidget *fixed = gtk_fixed_new();
+    
     butt = gtk_button_new_with_label("Go to note");
     gtk_container_add(GTK_CONTAINER(wind), butt);
+
+    gtk_fixed_put(GTK_FIXED(fixed), butt, 400, 10);
     
     g_signal_connect(butt, "clicked", G_CALLBACK(note_callbck));
 
