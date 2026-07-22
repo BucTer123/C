@@ -3,13 +3,8 @@
 #include <stdlib.h>
 #include "calculator_button_callback.h"
 
-void calculator_button_callback() {
-    calculator_button_callbackz();
-}
-
-void leave_button_callback() {
-    g_signal_connect(window1, "destroy", G_CALLBACK(gtk_main_quit), NULL)
-}
+void calculator_button_callback() { calculator_button_callbackz(); }
+void leave_button_callback() { exit(0); }
 
 int main(int argc, char* argv[]) {
     char *qwerty = malloc(1000);
