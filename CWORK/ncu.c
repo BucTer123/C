@@ -3,20 +3,20 @@
 #include <stdio.h>
 #include "ncu.h"
 
-void animation_function(char anim[100]) {
+void ANIMATION(char anim[100]) {
 	int MaxX, MaxY;
 	int z = 0;
 	for (z = 0; z < MaxY; z++) { mvprintw(MaxY / 2, z % MaxX, name_anim.c_str()); refresh(); }
 	endwin();
 }
-void input_function(char name_inp[100]) {	
+void INPUT(char name_inp[100]) {	
 	char all_name_inp[100] = "Input : " + name_inp;
 	mvprintw(10, 10, all_name_inp.c_str());
 	char inp[100];
 	getstr(inp);
 }
-void label_function(char label_name[100]) { printf("%s\n", label_name); }
-void button_function() {
+void LABEL(char label_name[100]) { printf("%s\n", label_name); }
+void BUTTON() {
 	initscr();
     noecho();
     cbreak();
