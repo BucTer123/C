@@ -9,17 +9,7 @@ size_t Writecall (void* contents, size_t size, size_t nmemb, char [100]s) {
 	return totalsize;
 }
 
-void rq_fnc() {
-	printf("Write domain :");
-	char dom[100];
-	scanf("%s", dom);
-	
-	printf("How many times :");
-	int tm;
-	scanf("%d", tm);
-	
-	int i = 0;
-	
+void rq_fnc(char dom[100], int tm) {
 	for (i = 0; i < tm; i++) {
 		if (!curl) {
 			printf("ERROR!:");
