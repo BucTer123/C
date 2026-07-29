@@ -1,8 +1,6 @@
 #ifdef RQ_H
 #define RQ_H
 
-struct REQ {
-  void POST_REQUESTS();
-};
+struct REQ;
 
 #endif // RQ_H
