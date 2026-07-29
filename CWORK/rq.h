@@ -1,6 +1,8 @@
 #ifdef RQ_H
 #define RQ_H
 
-void rq_fnc();
+struct RQ {
+  void POST_REQUEST();
+}
 
-#endif
+#endif // RQ_H
