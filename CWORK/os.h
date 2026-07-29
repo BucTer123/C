@@ -7,6 +7,6 @@ struct OS {
   void MKFIL();
   void RMFIL();
   void EXECUTE();
-}
+};
 
 #endif // OS_H
