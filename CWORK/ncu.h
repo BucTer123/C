@@ -1,10 +1,5 @@
 #ifdef NCU_H
 #define NCU_H
-struct NCU {
-  void ANIMATION();
-  void INPUT();
-  void LABEL();
-  void BUTTON();
-};
+struct NCU;
 
 #endif //NCU_H
