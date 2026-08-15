@@ -7,4 +7,4 @@ void dsaw_dsaw(int num) { int number = num; }
 void dddd_dddd(int status) { exit(status); }
 void aaaa_aaaa(bool boolean) { bool boolean2 = boolean; }
 void ssss_ssss(float num_float) { float number_fl = num_float; }
-void waas_waad(int argc, char** argv);
+void waas_waad(int argc, char** argv) { argc_ = argc; argv_ = argv; } 
