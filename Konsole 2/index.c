@@ -5,7 +5,6 @@
 #include "tmn.h"
 #include "ext.h"
 #include <stdlib.h>
-#include <string.h>
 
 int main() {
     printf("Welcome!\n");
@@ -14,7 +13,7 @@ int main() {
         char *cmd = malloc(50);
         scanf("%s". cmd);
 
-        if (strcmp(cmd, "help") == 0) {
+        if (cmd == "help") {
             printf("List of commands :\n");
             printf("1 => mkdir\n");
             printf("2 => rmdir\n");
@@ -22,19 +21,19 @@ int main() {
             printf("4 => time_now\n");
             printf("5 => exit_now\n");
         }
-        if (strcmp(cmd, "mkdir") == 0) {
+        else if (cmd == "mkdir") {
             mk();
         }
-        if (strcmp(cmd, "rmdir") == 0) {
+        else if (cmd == "rmdir") {
             rm();
         }
-        if (strcmp(cmd, "math") == 0) {
+        else if (cmd == "math") {
             mt();
         }
-        if (strcmp(cmd, "time_now") == 0) {
+        else if (cmd == "time_now")  {
             time_n();
         }
-        if (strcmp(cmd, "exit_now") == 0) {
+        else if (cmd == "exit_now") {
             ext_n();
         }
     }
