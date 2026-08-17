@@ -9,7 +9,7 @@ void start_webserver_python() {
 }
 
 void btn1_callback() {
-    GtkWidget *fixed = gtk_fixed_new();
+    GtkWidget *fixed2 = gtk_fixed_new();
 
     
     GtkWidget *window2 = gtk_new_window();
@@ -22,8 +22,8 @@ void btn1_callback() {
     GtkWidget *btn3 = gtk_new_button_with_label("Start WebServer");
     g_container_add(GTK_CONTAINER(window), btn3);
 
-    gtk_fixed_put(GTK_FIXED(fixed), text3, 400, 10);
-    gtk_fixed_put(GTK_FIXED(fixed), btn3, 400, 20);
+    gtk_fixed_put(GTK_FIXED(fixed2), text3, 400, 10);
+    gtk_fixed_put(GTK_FIXED(fixed2), btn3, 400, 20);
 
     g_signal_connect(btn3, "clicked", G_CALLBACK(start_webserver_python))
 
