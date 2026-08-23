@@ -1,10 +1,7 @@
 #include <gtk/gtk.h>
 #include <time.h>
 
-void exict() {
-    g_signal_connect(win, "destroy");
-    exit(0);
-}
+void exict() { g_signal_connect(win, "destroy"); exit(0); }
 
 int main(int argc, char* argv[]) {
     gtk_init(argc, argv);
