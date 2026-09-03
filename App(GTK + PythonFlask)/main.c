@@ -5,7 +5,16 @@
 
 void start_webserver_python() {
     printf("Starting...");
-    system("python server.py");
+
+    #if defined(__WIN32) && defined(_WIN64) 
+    system("python.exe server.py");
+    #define WIN32
+    #endif
+
+    #if defined(_linux) 
+    system("python3 server.py");
+    #define linux 
+    #endif
 }
 
 void btn1_callback() {
