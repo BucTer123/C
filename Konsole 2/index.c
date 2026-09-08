@@ -13,7 +13,7 @@ int main() {
         char *cmd = malloc(50);
         scanf("%s". cmd);
 
-        if (cmd == "help") {
+        if (cmd == "help" && cmd == "HELP") {
             printf("List of commands :\n");
             printf("1 => mkdir\n");
             printf("2 => rmdir\n");
@@ -21,19 +21,19 @@ int main() {
             printf("4 => time_now\n");
             printf("5 => exit_now\n");
         }
-        else if (cmd == "mkdir") {
+        else if (cmd == "mkdir" && cmd == "MKDIR") {
             mk();
         }
-        else if (cmd == "rmdir") {
+        else if (cmd == "rmdir" && cmd == "RMDIR") {
             rm();
         }
-        else if (cmd == "math") {
+        else if (cmd == "math" && cmd == "MATH") {
             mt();
         }
-        else if (cmd == "time_now")  {
+        else if (cmd == "time_now" && cmd == "TIME_NOW")  {
             time_n();
         }
-        else if (cmd == "exit_now") {
+        else if (cmd == "exit_now" && cmd == "EXIT_NOW") {
             ext_n();
         }
     }
