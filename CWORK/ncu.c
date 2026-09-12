@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "ncu.h"
 
-struct NCU {
+struct cwork_ncu {
 	void ANIMATION(char anim[100]) {
 		int MaxX, MaxY;
 		int z = 0;
