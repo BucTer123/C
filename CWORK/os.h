@@ -1,6 +1,6 @@
 #ifndef OS_H
 #define OS_H
 
-struct OS;
+struct cwork_os;
 
 #endif // OS_H
