@@ -4,7 +4,7 @@
 #include<sys/stat.h>
 #include"os.h"
 
-struct OS {
+struct cwork_os {
     void CREATE_DIR(char name_dir_create[100]) { mkdir(name_dir_create); }
     void REMOVE_DIR(char name_dir_remove[100]) { rmdir(name_dir_remove); }
     void CREATE_FILE(char name_file_create[100]) { FILE *file = fopen(name_file_create, "w"); }
