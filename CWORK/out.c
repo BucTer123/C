@@ -10,7 +10,7 @@
 #define ANSI_COLOR_CYAN    "\x1b[36m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
 
-struct CMD {
+struct cwork_cmd {
     void PRINTLN(char text_println[100]) { printf("%s\n", text_println.c_str()); }
     void CPRINTLN(char text_println[100], char color_println[100]) {
       if (color_println == "RED" || color_println == "red") { printf(ANSI_COLOR_RED + text_println.c_str() + ANSI_COLOR_RESET) }
