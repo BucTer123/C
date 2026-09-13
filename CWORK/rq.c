@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "rq.h"
 
-struct REQ {
+struct cwork_req {
 	size_t Writecall (void* contents, size_t size, size_t nmemb, char [100]s) {
 		size_t totalsize = size *nmemb;
 		s->append(char*)contents, totalsize);
