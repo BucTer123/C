@@ -1,6 +1,6 @@
 #ifdef RQ_H
 #define RQ_H
 
-struct REQ;
+struct cwork_req;
 
 #endif // RQ_H
