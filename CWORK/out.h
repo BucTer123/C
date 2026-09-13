@@ -1,6 +1,6 @@
 #ifndef OUT_H
 #define OUT_H
 
-struct CMD;
+struct cwork_cmd;
 
 #endif //OUT_H
