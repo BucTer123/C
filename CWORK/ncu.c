@@ -4,7 +4,7 @@
 #include "ncu.h"
 
 struct cwork_ncu {
-	void ANIMATION(char anim[100]) {
+	void animation(char anim[100]) {
 		int MaxX, MaxY;
 		int z = 0;
 		for (z = 0; z < MaxY; z++) { mvprintw(MaxY / 2, z % MaxX, name_anim.c_str()); refresh(); }
