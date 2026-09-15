@@ -10,7 +10,7 @@ struct cwork_ncu {
 		for (z = 0; z < MaxY; z++) { mvprintw(MaxY / 2, z % MaxX, name_anim.c_str()); refresh(); }
 		endwin();
 	}
-	void INPUT(char name_inp[100]) {	
+	void placeholder(char name_inp[100]) {	
 		char all_name_inp[100] = "Input : " + name_inp;
 		mvprintw(10, 10, all_name_inp.c_str());
 		char inp[100];
