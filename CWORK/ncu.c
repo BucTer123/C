@@ -16,7 +16,7 @@ struct cwork_ncu {
 		char inp[100];
 		getstr(inp);
 	}
-	void LABEL(char label_name[100]) { mvprintw(10, 10, label_name.c_str()); }
+	void label(char label_name[100]) { mvprintw(10, 10, label_name.c_str()); }
 	void BUTTON() {
 		initscr();
     	noecho();
