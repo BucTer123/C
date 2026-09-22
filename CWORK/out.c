@@ -20,5 +20,5 @@ struct cwork_cmd {
       else if (color_println == "MAGENTA" || color_println == "magenta") { printf(ANSI_COLOR_MAGENTA + text_println.c_str() + ANSI_COLOR_RESET) }
       else if (color_println == "CYAN" || color_println == "cyan") { printf(ANSI_COLOR_CYAN + text_println.c_str() + ANSI_COLOR_RESET) }
     }
-    void PRINT(char text_print[100]) { printf("%s\n", text_print.c_str()); }
+    void print(char text_print[100]) { printf("%s\n", text_print.c_str()); }
 }
