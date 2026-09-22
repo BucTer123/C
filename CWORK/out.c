@@ -12,7 +12,7 @@
 
 struct cwork_cmd {
     void println(char text_println[100]) { printf("%s\n", text_println.c_str()); }
-    void CPRINTLN(char text_println[100], char color_println[100]) {
+    void cprintln(char text_println[100], char color_println[100]) {
       if (color_println == "RED" || color_println == "red") { printf(ANSI_COLOR_RED + text_println.c_str() + ANSI_COLOR_RESET) }
       else if (color_println == "GREEN" || color_println == "green") { printf(ANSI_COLOR_GREEN + text_println.c_str() + ANSI_COLOR_RESET) }
       else if (color_println == "YELLOW" || color_println == "yellow") { printf(ANSI_COLOR_YELLOW + text_println.c_str() + ANSI_COLOR_RESET) }
