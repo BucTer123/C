@@ -9,7 +9,7 @@ struct cwork_req {
 		s->append(char*)contents, totalsize);
 		return totalsize;
 	}
-	void POST_REQUESTS (char dom[100], int tm) {
+	void post_requests (char dom[100], int tm) {
 		for (i = 0; i < tm; i++) {
 			if (!curl) {
 				printf("ERROR!:");
