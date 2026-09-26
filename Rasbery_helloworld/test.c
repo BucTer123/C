@@ -5,6 +5,6 @@ int main() {
 	stdio_init_all();
 	printf("Hello, world!");
 	while (true) {
-		sleep_ms(100);
+		sleep_ms(1000);
 	}
 }
