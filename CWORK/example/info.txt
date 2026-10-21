@@ -1,0 +1,21 @@
+Welcome to CWORK!
+
+commands:
+
+cwork_ncu.animation(<text>); <<< animation ncurses 
+cwork_ncu.placeholder(<text>); <<< input in ncurses 
+cwork_ncu.label(<text>); <<< label (output) in ncurses 
+cwork_ncu.button(); <<< button in ncurses 
+
+cwork_os.create_dir(<text>); <<< create directory 
+cwork_os.remove_dir(<text>); <<< remove directory 
+cwork_os.create_file(<text>); <<< create file 
+cwork_os.remove_file(<text>); <<< remove file 
+cwork_os.execute(<text>); <<< open or start command 
+cwork_os.returnb(<status BOOL>); <<< return boolean (true or false) 
+
+cwork_out.println(<text>); <<< write text but every new println will write in newline 
+cwork_out.cprintln(<text>, <color>); <<< as a println but text is colored 
+cwork_out.print(<text>); <<< normal command to write output in one line
+
+cwork_req.post_requests(<text>, <times>); <<< post requests to domain 
