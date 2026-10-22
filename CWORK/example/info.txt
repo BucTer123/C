@@ -5,7 +5,7 @@ commands:
 cwork_ncu.animation(<text>); <<< animation ncurses 
 cwork_ncu.placeholder(<text>); <<< input in ncurses 
 cwork_ncu.label(<text>); <<< label (output) in ncurses 
-cwork_ncu.button(); <<< button in ncurses 
+cwork_ncu.button(<text>); <<< button in ncurses 
 
 cwork_os.create_dir(<text>); <<< create directory 
 cwork_os.remove_dir(<text>); <<< remove directory 
