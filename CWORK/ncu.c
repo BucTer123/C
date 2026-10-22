@@ -17,12 +17,14 @@ struct cwork_ncu {
 		getstr(inp);
 	}
 	void label(char label_name[100]) { mvprintw(10, 10, label_name.c_str()); }
-	void button() {
+	void button(char text[99]d) {
 		initscr();
     	noecho();
     	cbreak();
     	keypad(stdscr, TRUE);
 
+		char text_button[102] = "[ " + text + " }";
+			
     	int ch;
     	int selected = 0;
 
@@ -30,7 +32,7 @@ struct cwork_ncu {
         	clear();
 
         	if (selected == 0) attron(A_REVERSE);
-        	mvprintw(52, 53, "[ CLICK! ]");
+        	mvprintw(52, 53, text_button.c_str());
         	if (selected == 0) attroff(A_REVERSE);
 
         	refresh();
